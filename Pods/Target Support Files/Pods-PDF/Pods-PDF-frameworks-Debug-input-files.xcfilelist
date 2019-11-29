@@ -1,0 +1,11 @@
+${PODS_ROOT}/Target Support Files/Pods-PDF/Pods-PDF-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ADAL/ADAL.framework
+${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework
+${BUILT_PRODUCTS_DIR}/Base32/Base32.framework
+${BUILT_PRODUCTS_DIR}/EvernoteSDK/EvernoteSDK.framework
+${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework
+${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework
+${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework
+${BUILT_PRODUCTS_DIR}/ObjectiveDropboxOfficial/ObjectiveDropboxOfficial.framework
+${BUILT_PRODUCTS_DIR}/OneDriveSDK/OneDriveSDK.framework
+${BUILT_PRODUCTS_DIR}/box-ios-sdk/BoxContentSDK.framework

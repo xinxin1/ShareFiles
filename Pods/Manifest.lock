@@ -1,0 +1,91 @@
+PODS:
+  - ADAL (1.2.10)
+  - AppAuth (1.2.0):
+    - AppAuth/Core (= 1.2.0)
+    - AppAuth/ExternalUserAgent (= 1.2.0)
+  - AppAuth/Core (1.2.0)
+  - AppAuth/ExternalUserAgent (1.2.0)
+  - Base32 (1.1.2)
+  - box-ios-sdk (1.0.14):
+    - box-ios-sdk/logger (= 1.0.14)
+    - box-ios-sdk/no-arc (= 1.0.14)
+  - box-ios-sdk/logger (1.0.14)
+  - box-ios-sdk/no-arc (1.0.14):
+    - box-ios-sdk/logger
+  - EvernoteSDK (3.0.0)
+  - GoogleAPIClientForREST/Core (1.3.10):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/Drive (1.3.10):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GTMAppAuth (1.0.0):
+    - AppAuth/Core (~> 1.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.3.0):
+    - GTMSessionFetcher/Full (= 1.3.0)
+  - GTMSessionFetcher/Core (1.3.0)
+  - GTMSessionFetcher/Full (1.3.0):
+    - GTMSessionFetcher/Core (= 1.3.0)
+  - ObjectiveDropboxOfficial (3.4.0)
+  - OneDriveSDK (1.3.0):
+    - OneDriveSDK/Auth (= 1.3.0)
+    - OneDriveSDK/Common (= 1.3.0)
+    - OneDriveSDK/Extensions (= 1.3.0)
+    - OneDriveSDK/Implementations (= 1.3.0)
+    - OneDriveSDK/OneDriveCoreSDK (= 1.3.0)
+  - OneDriveSDK/Auth (1.3.0):
+    - ADAL (~> 1.2)
+    - Base32 (~> 1.1)
+    - OneDriveSDK/Common
+  - OneDriveSDK/Common (1.3.0)
+  - OneDriveSDK/Extensions (1.3.0):
+    - OneDriveSDK/Auth
+    - OneDriveSDK/Implementations
+    - OneDriveSDK/OneDriveCoreSDK
+  - OneDriveSDK/Implementations (1.3.0):
+    - OneDriveSDK/Common
+  - OneDriveSDK/OneDriveCoreSDK (1.3.0):
+    - OneDriveSDK/Common
+
+DEPENDENCIES:
+  - box-ios-sdk
+  - EvernoteSDK (~> 3.0)
+  - GoogleAPIClientForREST/Drive
+  - GoogleSignIn
+  - ObjectiveDropboxOfficial (~> 3.4.0)
+  - OneDriveSDK
+
+SPEC REPOS:
+  trunk:
+    - ADAL
+    - AppAuth
+    - Base32
+    - box-ios-sdk
+    - EvernoteSDK
+    - GoogleAPIClientForREST
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - ObjectiveDropboxOfficial
+    - OneDriveSDK
+
+SPEC CHECKSUMS:
+  ADAL: f2eb2158b9bcd2c8416ff2d026c176b98ea6651f
+  AppAuth: bce82c76043657c99d91e7882e8a9e1a93650cd4
+  Base32: 163c298644d184e89ca4e00a996bad6bf5166390
+  box-ios-sdk: 8034a7b0fcac562105725afa744011c81da99398
+  EvernoteSDK: 7e9de762a9c281e714f3e6d0ae10657db3046792
+  GoogleAPIClientForREST: 4acfffd77f1c3c8741b6be9eaed0e603278efbde
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
+  GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
+  ObjectiveDropboxOfficial: 250ce53218773ba687201614ad6de03b8cb14de6
+  OneDriveSDK: 90ab8781f0992c37d96b68cc340585f5cf36701f
+
+PODFILE CHECKSUM: dc45f4441c4408cdf9d875ada0b4730c38faadab
+
+COCOAPODS: 1.8.4
