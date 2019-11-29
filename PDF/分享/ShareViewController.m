@@ -42,35 +42,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 文字识别
-//    PDFDocument *pdf = [[PDFDocument alloc] initWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"4.pdf" ofType:nil]]];
-//    NSUInteger pageCount = pdf.pageCount;
-//    NSMutableAttributedString *documentContent = [[NSMutableAttributedString alloc] init];
-//    for (int i=0; i<pageCount; i++) {
-//        PDFPage *page = [pdf pageAtIndex:i];
-//        NSAttributedString *pageContent = page.attributedString;
-//        NSString *pageContentString = page.string;
-//        [documentContent appendAttributedString:pageContent];
-//    }
-//    NSLog(@"->%@<-",documentContent);
-    
-    BOOL t = [[NSFileManager defaultManager] removeItemAtPath:[NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/2.pdf"] error:nil];
-    // 合成PDF
-    PDFDocument *pdf = [[PDFDocument alloc] init];
-    PDFPage *page1 = [[PDFPage alloc] initWithImage:[UIImage imageNamed:@"2.jpeg"]];
-    PDFPage *page2 = [[PDFPage alloc] initWithImage:[UIImage imageNamed:@"1.jpg"]];
-    PDFPage *page3 = [[PDFPage alloc] initWithImage:[UIImage imageNamed:@"3.jpg"]];
-    [pdf insertPage:page1 atIndex:0];
-    [pdf insertPage:page2 atIndex:1];
-    [pdf insertPage:page3 atIndex:2];
-//    [pdf unlockWithPassword:@"10086"];
-//    BOOL y = [pdf writeToFile:[NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/1.pdf"]];
-    BOOL y = [pdf writeToFile:[NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/2.pdf"] withOptions:@{PDFDocumentUserPasswordOption:@"10086", PDFDocumentOwnerPasswordOption:@"10010"}];// 有密码，两个都可以打开
-//BOOL y = [pdf writeToFile:[NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/2.pdf"] withOptions:@{PDFDocumentUserPasswordOption:@"10086"}];//没有添加密码
-//    BOOL y = [pdf writeToFile:[NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/2.pdf"] withOptions:@{PDFDocumentOwnerPasswordOption:@"10010"}];//没有密码
-    
-    NSLog(@"%d",y);
-    
     [self setupView];
 }
 
